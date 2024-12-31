@@ -22,7 +22,7 @@
     <ul class="flex flex-col">
         <li class="flex gap-4 items-center leading-relaxed text-neutral-900">
             <img src={svelteLogo} class="logo" width={20} alt="">
-            <p class="font-medium text-xl">kalukator</p>
+            <p class="font-medium text-lg">kalukator</p>
         </li>
         <li class="splitter border-t border-solid border-neutral-200 my-4"></li>
         <li class="py-1 text-sm font-medium leading-relaxed text-neutral-950">Pages</li>
