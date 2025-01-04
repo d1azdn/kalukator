@@ -1,31 +1,17 @@
 <script>
     import NavigationBar from '../lib/NavigationBar.svelte';
     import svelteLogo from '../assets/svelte.svg'
-    import { onMount } from 'svelte';
     import { createEventDispatcher } from 'svelte';
     const dispatch = createEventDispatcher();
-
-    let titleList = []
 
     function changePage(text){
         dispatch('setpage', text)
     }
 
-    onMount(()=>{
-        const getTitle = document.getElementsByClassName('title')
-        titleList = Array.from(getTitle).map(value=>{
-            return {
-                id : value.id,     
-                title : value.textContent
-            }
-        })
-        console.log(titleList)
-    })
-
 </script>
 
 <section class="container w-full flex">
-    <div class="p-20">
+    <div class="p-20 w-full">
         <div class="header">
             <h1 class="headerTitle">Kalukator</h1>
         </div>
@@ -69,7 +55,7 @@
 
     </div>
 
-    <NavigationBar titleList={titleList}/>
+    <NavigationBar/>
 
 </section>
 

@@ -1,16 +1,28 @@
-<script>
-export let titleList
-    
-const handleClick = (id) => {
-        const offset = 45
-        const target = document.getElementById(id)
-        const elementPosition = target.getBoundingClientRect().top + window.scrollY;
+<script>        
+    import { onMount } from 'svelte';
+    let titleList = []
 
-        window.scrollTo({
-        top: elementPosition - offset,
-        behavior: 'smooth', // Smooth scrolling effect
-        })
+    const handleClick = (id) => {
+            const offset = 45
+            const target = document.getElementById(id)
+            const elementPosition = target.getBoundingClientRect().top + window.scrollY;
+
+            window.scrollTo({
+            top: elementPosition - offset,
+            behavior: 'smooth', // Smooth scrolling effect
+            })
     }
+
+    onMount(()=>{
+        const getTitle = document.getElementsByClassName('title')
+        titleList = Array.from(getTitle).map(value=>{
+            return {
+                id : value.id,     
+                title : value.textContent
+            }
+        })
+        console.log(titleList)
+    })
 </script>
 
 <div class="me-10 my-20 min-w-52 h-screen">
