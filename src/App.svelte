@@ -1,9 +1,9 @@
 <script>
-  // import Counter from './lib/Counter.svelte'
   import Sidebar from './components/Sidebar.svelte';
   import Home from './components/Home.svelte';
-  import Notes from './components/Notes.svelte';
   import Calculator from './components/Calculator.svelte';
+  import Notes from './components/Notes.svelte';
+  import Counter from './components/Counter.svelte';
   import Credits from './components/Credits.svelte';
   let page = 'home'
 
@@ -22,12 +22,14 @@
 <main class="flex flex-row">
   <Sidebar page={page} on:setpage={changePage}/>
   {#if page=='home'}
-  <Home on:setpage={changePage}/>
+    <Home on:setpage={changePage}/>
   {:else if page=='calculator'}
-  <Calculator/>
+    <Calculator/>
   {:else if page=='notes'}
-  <Notes/>
+    <Notes/>
+  {:else if page=='counter'}
+    <Counter/>
   {:else}
-  <Credits/>
+    <Credits/>
   {/if}
 </main>

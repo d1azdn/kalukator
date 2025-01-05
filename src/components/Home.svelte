@@ -59,7 +59,7 @@
 
 </section>
 
-<style>
+<style lang="postcss">
     .header{
         @apply pb-12 border-b border-solid border-neutral-200
     }

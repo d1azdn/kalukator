@@ -13,6 +13,7 @@
         home : "Home",
         calculator : "Calculator",
         notes : "Notes",
+        counter : "Counter",
         credits : "Credits"
     }
 </script>

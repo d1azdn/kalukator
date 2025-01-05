@@ -55,7 +55,7 @@
 
         <div class="content end">
             <form action="" onsubmit={handleSubmit} >
-                <h1 class="title" id="notes">Add notes</h1>
+                <h1 class="title" id="testing">Testing</h1>
                 <p class="text">Create notes by text here, then press 'Enter'. Right click the notes to delete them.</p>
                 <input type="text" name="note" id="note" placeholder="Insert your text here" class="focus:outline-none bg-neutral-50 rounded-lg w-full ps-3 py-3 pb-14">
             </form>
@@ -68,7 +68,7 @@
     <NavigationBar />
 </section>
 
-<style>
+<style lang="postcss">
     .header{
         @apply pb-12 border-b border-solid border-neutral-200
     }
@@ -86,9 +86,6 @@
     }
     .content .text{
         @apply text-neutral-600 my-4
-    }
-    .content .text .link{
-        @apply text-blue-500 hover:underline
     }
     .boldtext{
         @apply p-2 bg-neutral-50
