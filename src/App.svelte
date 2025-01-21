@@ -24,7 +24,7 @@
   {#if page=='home'}
     <Home on:setpage={changePage}/>
   {:else if page=='calculator'}
-    <Calculator/>
+    <Calculator on:setpage={changePage}/>
   {:else if page=='notes'}
     <Notes/>
   {:else if page=='counter'}
