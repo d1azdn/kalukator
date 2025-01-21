@@ -167,7 +167,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Diaz Saputra - [@d1azdn](https://instagram.com/d1azdn) - diazsaputramc@gmail.com
 
-Project Link: [https://github.com/d1azdn/posteo](https://github.com/d1azdn/posteo)
+Project Link: [https://github.com/d1azdn/kalukator](https://github.com/d1azdn/kalukator)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
