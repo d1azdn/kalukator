@@ -75,8 +75,6 @@ This is an example of how to list things you need to use the software and how to
   npm install npm@latest -g
   ```
 
-And make sure you already running postgresql on local, or you can use free postgresql hosting, then get the URL.
-
 ### Installation
 
 
